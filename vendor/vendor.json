@@ -1,0 +1,19 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "nDRFf0UVen8NXr7/YvCYekukhXc=",
+			"path": "github.com/confluentinc/confluent-kafka-go/kafka",
+			"revision": "5690c413c27721cca1a9665fd359942897c7d9ef",
+			"revisionTime": "2018-06-15T23:42:42Z"
+		},
+		{
+			"checksumSHA1": "QdSIO+gp41BqNti0ZDVdXvfDvDo=",
+			"path": "github.com/gorilla/websocket",
+			"revision": "5ed622c449da6d44c3c8329331ff47a9e5844f71",
+			"revisionTime": "2018-06-05T20:25:52Z"
+		}
+	],
+	"rootPath": "github.com/danieljameskay/mapbox-go-ws-kafka"
+}
