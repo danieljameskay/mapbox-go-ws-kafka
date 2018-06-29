@@ -7,7 +7,6 @@ import (
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/gorilla/websocket"
-	"os"
 )
 
 var upgrader = websocket.Upgrader{
@@ -19,12 +18,7 @@ var upgrader = websocket.Upgrader{
 }
 
 func main() {
-	port := os.Getenv("port")
-
-	if port == "" {
-		log.Fatal("$PORT must be set")
-	}
-
+	port := 1337
 	http.HandleFunc("/feed", liveFeed)
 	log.Printf("Server starting on port %v\n", port)
 	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%v", port), nil))

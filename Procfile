@@ -1,1 +1,0 @@
-web: mapbox-go-ws-kafka
