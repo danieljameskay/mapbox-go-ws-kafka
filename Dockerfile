@@ -13,9 +13,8 @@ RUN make
 RUN make install
 WORKDIR /go/src/app
 RUN git clone https://github.com/danieljameskay/mapbox-go-ws-kafka.git
-COPY . .
 WORKDIR /go/src/app/mapbox-go-ws-kafka
 RUN go get -d -v ./...
-RUN go install -v ./...
-
-CMD ["app"]
+#RUN go install -v ./...
+RUN go build
+CMD ["./mapbox-go-ws-kafka"]
