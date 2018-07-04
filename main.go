@@ -36,7 +36,7 @@ func liveFeed(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	log.Println("WS: Connection established.")
-	p, err := kafka.NewProducer(&kafka.ConfigMap{"bootstrap.servers": "localhost"})
+	p, err := kafka.NewProducer(&kafka.ConfigMap{"bootstrap.servers": "178.128.173.16"})
 	if err != nil {
 		panic(err)
 	}
